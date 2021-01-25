@@ -26,6 +26,8 @@ export class AppComponent {
 
     document.body.style.backgroundImage =
       'url(https://picsum.photos/1280/920?blur=5)';
+
+    document.body.style.backgroundSize = 'cover';
   }
 
   resetGame() {
