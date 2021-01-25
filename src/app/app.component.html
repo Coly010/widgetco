@@ -7,29 +7,29 @@
     <app-scoreboard [company]="company"></app-scoreboard>
     <hr />
 
-    <div class="column">
-      <app-individual-contributors
-        [company]="company"
-      ></app-individual-contributors>
-      <app-small-teams [company]="company"></app-small-teams>
-      <app-medium-team [company]="company"></app-medium-team>
-      <app-large-team [company]="company"></app-large-team>
-    </div>
+    <div class="company-actions">
+      <div class="column">
+        <app-individual-contributors
+          [company]="company"
+        ></app-individual-contributors>
+        <app-small-teams [company]="company"></app-small-teams>
+        <app-medium-team [company]="company"></app-medium-team>
+        <app-large-team [company]="company"></app-large-team>
+      </div>
 
-    <div class="column">
-      <app-hiring-managers [company]="company"></app-hiring-managers>
-      <app-hr-team [company]="company"></app-hr-team>
-      <!-- <app-hr-dept></app-hr-dept> -->
-    </div>
+      <div class="column">
+        <app-hiring-managers [company]="company"></app-hiring-managers>
+        <app-hr-team [company]="company"></app-hr-team>
+        <!-- <app-hr-dept></app-hr-dept> -->
+      </div>
 
-    <div class="column">
-      <app-buildings></app-buildings>
+      <div class="column">
+        <app-buildings></app-buildings>
+      </div>
     </div>
-  </div>
-  <div class="reset">
-    <p><strong>Reset your progress!</strong></p>
-    <button class="reset-btn" (click)="resetGame()">Reset</button>
+    <div class="reset">
+      <p><strong>Reset your progress!</strong></p>
+      <button class="reset-btn" (click)="resetGame()">Reset</button>
+    </div>
   </div>
 </ng-container>
-
-<router-outlet></router-outlet>

@@ -23,6 +23,9 @@ export class AppComponent {
     this.autoSave = setInterval(() => {
       this.companyService.saveGame();
     }, 500);
+
+    document.body.style.backgroundImage =
+      'url(https://picsum.photos/1280/920?blur=5)';
   }
 
   resetGame() {

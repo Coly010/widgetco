@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: sans-serif;
+}
+
 .column h4 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+h4 {
+  text-align: center;
+}
+
+button {
+  background-color: #12721a;
+  padding: 8px 24px;
+  border: 1px solid #12721a;
+  border-radius: 4px;
+  color: white;
+  transition: background-color 180ms ease-in-out, color 180ms ease-in-out,
+    border-color 180ms ease-in-out;
+}
+
+button[disabled] {
+  background-color: transparent;
+  color: #3a493b;
+  border-color: #3a493b;
+}
+
+button:hover {
+  background-color: #179b22;
+  border-color: #179b22;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

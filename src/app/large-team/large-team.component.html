@@ -1,4 +1,8 @@
 <h4>Large Teams</h4>
-<hr>
-<button [disabled]="!canFormTeam()" (click)="onFormTeamClick()">Form New Team</button><br />
-Count: {{company?.largeTeams?.length|number}}
+<hr />
+<div class="info">
+  <div><strong>Count:</strong> {{ company?.largeTeams?.length | number }}</div>
+  <button [disabled]="!canFormTeam()" (click)="onFormTeamClick()">
+    Form New Team
+  </button>
+</div>

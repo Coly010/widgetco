@@ -1,5 +1,15 @@
 <h4>Buildings</h4>
-<hr>
-<button [disabled]="!canExpandIntoNewBuilding()" (click)="expandIntoNewBuilding()">Expand into new building</button><br />
-Count: {{getBuildingCount()|number}}<br />
-Building cost: {{getNewBuildingCost()|currency:'USD':'$'}}
+<hr />
+<div class="info">
+  <div>
+    <strong>Count:</strong> {{ getBuildingCount() | number }}<br />
+    <strong>Building cost:</strong>
+    {{ getNewBuildingCost() | currency: "USD":"$" }}
+  </div>
+  <button
+    [disabled]="!canExpandIntoNewBuilding()"
+    (click)="expandIntoNewBuilding()"
+  >
+    Expand into new building
+  </button>
+</div>

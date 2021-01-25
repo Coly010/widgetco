@@ -1,4 +1,8 @@
 <h4>HR Team</h4>
-<hr>
-<button [disabled]="!canFormHRTeam()" (click)="formHrTeam()">Form HR Team</button><br />
-Count: {{company?.hrTeams?.length|number}}
+<hr />
+<div class="info">
+  <div><strong>Count:</strong> {{ company?.hrTeams?.length | number }}</div>
+  <button [disabled]="!canFormHRTeam()" (click)="formHrTeam()">
+    Form HR Team
+  </button>
+</div>
